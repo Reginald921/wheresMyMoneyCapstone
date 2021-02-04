@@ -49,13 +49,18 @@ export const EditExpense = (route) => {
             <br />
             <label>
               Type:
-              <input
-                // change to dropdown menu
-                type="text"
-                name="type"
+              <select
+                required
                 value={selectedExpense.type}
                 onChange={(e) => handleOnChange("type", e.target.value)}
-              />
+              >
+                <option value="">Select Type</option>
+                <option value="food">food</option>
+                <option value="bills">bills</option>
+                <option value="entertainment">entertainment</option>
+                <option value="charity">charity</option>
+                <option value="misc.">misc.</option>
+              </select>
             </label>
             <br />
             <label>
