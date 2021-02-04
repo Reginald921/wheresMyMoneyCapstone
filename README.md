@@ -1,2 +1,2 @@
-# wheresMyMoneyCapstone
+# FoodCompCapstone
 Created with CodeSandbox
