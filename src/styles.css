@@ -2,3 +2,141 @@
   font-family: sans-serif;
   text-align: center;
 }
+body {
+  padding: 0;
+  margin: 0;
+}
+
+.full-bg-size-img {
+  background: url(https://us.123rf.com/450wm/plasticperson/plasticperson2005/plasticperson200524347/148748955-stock-illustration-flying-dollars-banknotes-against-the-sky-background-money-is-flying-in-the-air-100-us-banknotes-new-.jpg?ver=6)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  min-height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.background_img {
+  background: url(/images/fallingCash.jpg) no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+.background_ltBlue {
+  background-color: #b0d2ff;
+}
+
+.background_skyblue {
+  background-color: #d4deeb;
+}
+
+.page_container {
+  width: 100%;
+  height: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+}
+
+button {
+  font-size: 32px;
+}
+
+.right {
+  text-align: right;
+  padding: 80px 80px 0px 0px;
+}
+
+.center {
+  text-align: center;
+}
+
+.mar_30 {
+  margin: 30px;
+}
+
+.mar_5 {
+  margin: 1px;
+}
+.full-bg-size {
+  background-image: url("./images/fallingCash.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+.bg-dim {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+}
+
+.bg-view {
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+}
+
+.bg-min {
+  min-width: 100%;
+  min-height: 100%;
+}
+.text-center {
+  text-align: center;
+}
+
+.color-lightblue {
+  color: #a6ebfa;
+}
+
+.color-chart-bg {
+  color: rgb(139, 187, 183);
+}
+.float-right {
+  float: right;
+}
+
+.font-48 {
+  font-size: 48px;
+}
+
+.font-32 {
+  font-size: 32px;
+}
+
+.font-18 {
+  font-size: 18px;
+}
+.bgColor-purple {
+  background-color: #1b0a37;
+}
+
+.bgColor-ltblue {
+  background-color: #b0d2ff;
+}
+
+.flex-endRight {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flex {
+  display: flex;
+}
+.pad-20lr {
+  padding: 0px 20px;
+}
+
+.right {
+  justify-items: right;
+}
