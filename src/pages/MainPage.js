@@ -1,10 +1,11 @@
 import React from "react";
 // import { fallingCash } from "../images/fallingCash.jpg";
 import { Link } from "react-router-dom";
-
+import MyNavbar from "../components/shared/MyNavbar";
+import loggedInUser from "./LoginPage";
 // first filter all entries with correct
 // username and password into UserExpenses array
-
+console.log("logged", loggedInUser.username);
 const MainPage = () => (
   <div className="pageContainer">
     <div
@@ -14,7 +15,9 @@ const MainPage = () => (
       }}
     >
       <div className="title_container ">
+        <MyNavbar />
         <div className="right">
+          <h2>{loggedInUser.username}</h2>
           <h1> WHERE'S MY</h1>
           <h1> MONEY???</h1>
         </div>

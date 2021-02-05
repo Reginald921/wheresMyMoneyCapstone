@@ -1,5 +1,5 @@
 import React, { useState, Fragment, useContext } from "react";
-
+import MyNavbar from "../components/shared/MyNavbar";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalState";
 import {
@@ -29,6 +29,7 @@ const RecordsPage = () => {
 
   return (
     <Fragment>
+      <MyNavbar />
       <div className="pageContainer background_skyblue ">
         <h1 className=" ">Record Expenses</h1>
         <br />

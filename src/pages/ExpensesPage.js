@@ -2,7 +2,7 @@ import React, { Fragment, useState, useContext } from "react";
 import { GlobalContext } from "../context/GlobalState";
 import { useHistory } from "react-router-dom";
 import { Link } from "react-router-dom";
-
+import MyNavbar from "../components/shared/MyNavbar";
 import ExpenseForm from "../forms/ExpensesForm";
 
 const ExpensesPage = () => {
@@ -30,6 +30,7 @@ const ExpensesPage = () => {
 
   return (
     <Fragment>
+      <MyNavbar />
       <div className="background_skyblue  ">
         <div className=" ">Enter Expenses</div>
         <div className=" ">

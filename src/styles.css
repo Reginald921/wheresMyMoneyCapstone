@@ -22,7 +22,8 @@ body {
 }
 
 .background_img {
-  background: url(/images/fallingCash.jpg) no-repeat center center fixed;
+  background: url(https://us.123rf.com/450wm/plasticperson/plasticperson2005/plasticperson200524347/148748955-stock-illustration-flying-dollars-banknotes-against-the-sky-background-money-is-flying-in-the-air-100-us-banknotes-new-.jpg?ver=6)
+    no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -139,4 +140,8 @@ button {
 
 .right {
   justify-items: right;
+}
+
+.form-inputs p {
+  color: red;
 }

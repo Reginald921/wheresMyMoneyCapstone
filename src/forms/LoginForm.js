@@ -20,6 +20,7 @@ const LoginForm = () => {
       ...user,
       [e.target.name]: e.target.value
     });
+    loggedIn();
   };
 
   const loggedIn = () => {
@@ -51,9 +52,9 @@ const LoginForm = () => {
         />
       </label>
       <br />
-      {/* <Link to="/main"> */}
-      <button>Submit</button>
-      {/* </Link> */}
+      <Link to="/">
+        <button>Submit</button>
+      </Link>
     </form>
   );
 };

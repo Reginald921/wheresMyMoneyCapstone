@@ -6,7 +6,7 @@ import "./styles.css";
 import LoginPage from "./pages/LoginPage";
 import MainPage from "./pages/MainPage";
 import ExpensesPage from "./pages/ExpensesPage";
-// import SignUpPage from "./pages/SignUpPage";
+import SignUpPage from "./pages/SignUpPage";
 import RecordsPage from "./pages/RecordsPage";
 import { EditExpense } from "./components/EditExpense";
 
@@ -25,12 +25,12 @@ function App() {
     <>
       <GlobalProvider>
         <Router>
-          <MyNavbar />
+          {/* <MyNavbar /> */}
           <Switch>
             <Route path="/login" exact component={LoginPage} />
             <Route path="/" exact component={MainPage} />
             <Route path="/expenses" exact component={ExpensesPage} />
-            {/* <Route path="/signup" component={SignUpPage} /> */}
+            <Route path="/signup" component={SignUpPage} />
             <Route path="/records" exact component={RecordsPage} />
             <Route path="/edit/:id" exact component={EditExpense} />
           </Switch>
