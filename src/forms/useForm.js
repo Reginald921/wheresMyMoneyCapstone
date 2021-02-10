@@ -1,6 +1,6 @@
 import { useState, useEffect } from "react";
 
-const useForm = (validate) => {
+const useForm = (callback,validate) => {
   const [values, setValues] = useState({
     firstname: "",
     lastname: "",
@@ -28,7 +28,8 @@ const useForm = (validate) => {
 
   useEffect(() => {
     if (Object.keys(errors).length === 0 && isSubmitting) {
-      // add values to apiData
+      // callback();
+      // redirect?
     }
   }, [errors]);
 

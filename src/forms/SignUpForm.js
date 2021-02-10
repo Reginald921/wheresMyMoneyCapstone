@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
+import { Link, Redirect } from "react-router-dom";
 import useForm from "./useForm";
 import validate from "../validateInfo";
 
@@ -94,13 +94,13 @@ const SignUpForm = (submitForm) => {
       <br />
       <br />
       <hr />
-      <Link to="/">
-        <button>Sign Up</button>
-      </Link>
+      
+        <button type="submit">Sign Up</button>
+      
       {/* on submit add entries into ApiInfo array then goto main page */}
       <br />
       <span>
-        Already have an account? Login <a href="#">here</a>
+        Already have an account? Login <a href="./login">here</a>
       </span>
       <br />
       <br />

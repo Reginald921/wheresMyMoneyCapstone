@@ -1,7 +1,7 @@
 import React, { Fragment, useContext } from "react";
 import MyNavbar from "../components/shared/MyNavbar";
 import { Link } from "react-router-dom";
-import { GlobalContext } from "../context/GlobalState";
+import { GlobalContext } from "../forms/context/GlobalState";
 import {
   BarChart,
   Bar,

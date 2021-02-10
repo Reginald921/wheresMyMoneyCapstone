@@ -26,7 +26,7 @@ const LoginForm = () => {
             value={values.username}
             onChange={handleChange}
           />
-          {errors.username && <p>{errors.username}</p>}
+          {/* {errors.username && <p>{errors.username}</p>} */}
         </label>
         <br />
         <label>
@@ -37,7 +37,7 @@ const LoginForm = () => {
             value={values.password}
             onChange={handleChange}
           />
-          {errors.password && <p>{errors.password}</p>}
+          {/* {errors.password && <p>{errors.password}</p>} */}
         </label>
         <br />
         <button>Submit</button>

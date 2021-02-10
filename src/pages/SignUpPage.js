@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import SignUpForm from "../forms/SignUpForm";
-import FormSuccess from "../FormSuccess";
+import FormSuccess from "../forms/FormSuccess";
 import MyNavbar from "../components/shared/MyNavbar";
 
 const SignUpPage = () => {

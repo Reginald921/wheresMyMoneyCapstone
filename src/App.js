@@ -17,7 +17,7 @@ import {
   withRouter,
   BrowserRouter
 } from "react-router-dom";
-import { GlobalProvider } from "./context/GlobalState";
+import { GlobalProvider } from "./forms/context/GlobalState";
 
 function App() {
   return (
