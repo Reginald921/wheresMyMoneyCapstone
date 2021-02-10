@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "reactstrap/lib/";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
