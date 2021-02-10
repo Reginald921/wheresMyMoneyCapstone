@@ -1,5 +1,4 @@
 import React from "react";
-// import fallingCash from "../images/fallingCash.jpg";
 import LoginForm from "../forms/LoginForm";
 import { Link } from "react-router-dom";
 import MyNavbar from "../components/shared/MyNavbar";
@@ -7,15 +6,8 @@ import MyNavbar from "../components/shared/MyNavbar";
 const LoginPage = () => {
   const adminUser = {};
   return (
-    // <div
-    //   // fix background image
-    //   className=" pageContainer  "
-    //   // style={{ backgroundImage: `url(${fallingCash})` }}
-    // >
-    // <div className="pageContainer">
     <div
       className="background_img"
-      // className="full-bg-size-img"
       style={{
         backgroundImage: `url(https://t4.ftcdn.net/jpg/00/52/25/05/360_F_52250599_4kzEbc06mYCRbz8cMLSwKEzQQB98uauo.jpg)`
       }}
@@ -47,7 +39,6 @@ const LoginPage = () => {
         <br />
       </div>
     </div>
-    // </div>
   );
 };
 

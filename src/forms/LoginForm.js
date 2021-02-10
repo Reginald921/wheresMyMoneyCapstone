@@ -1,61 +1,48 @@
 import React, { useState } from "react";
+import useForm from "./useForm";
+import validateInfo from "../validateInfo";
+import { Link, Redirect } from "react-router-dom";
 
-import { Link } from "react-router-dom";
 const LoginForm = () => {
-  const initialFormState = { id: null, username: "", password: "" };
-  const [user, setUser] = useState(initialFormState);
-  const [loggedInUser, setLoggedInUser] = useState(initialFormState);
+  const { values, errors, handleChange, handleSubmit } = useForm(
+    login,
+    validateInfo
+  );
+  const [loggedIn, setLoggedIn] = useState(false);
 
-  const printValues = (e) => {
-    e.preventDefault();
-    // set loggedInUser to username, password
-    // check user
-    console.log("submit", user.username, user.password);
-    console.log("logged", loggedInUser.username);
-    console.log("password", loggedInUser.password);
-  };
-
-  const updateField = (e) => {
-    setUser({
-      ...user,
-      [e.target.name]: e.target.value
-    });
-    loggedIn();
-  };
-
-  const loggedIn = () => {
-    setLoggedInUser({
-      username: user.username,
-      password: user.password
-    });
-  };
+  function login() {
+    setLoggedIn(true);
+    return;
+  }
 
   return (
-    <form className="center" onSubmit={printValues}>
-      <label>
-        Username:
-        <input
-          type="text"
-          name="username"
-          value={user.username}
-          onChange={updateField}
-        />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type="password"
-          name="password"
-          value={user.password}
-          onChange={updateField}
-        />
-      </label>
-      <br />
-      <Link to="/">
+    <div>
+      <form className="center" onSubmit={handleSubmit} novalidate>
+        <label>
+          Username:
+          <input
+            type="text"
+            name="username"
+            value={values.username}
+            onChange={handleChange}
+          />
+          {errors.username && <p>{errors.username}</p>}
+        </label>
+        <br />
+        <label>
+          Password:
+          <input
+            type="password"
+            name="password"
+            value={values.password}
+            onChange={handleChange}
+          />
+          {errors.password && <p>{errors.password}</p>}
+        </label>
+        <br />
         <button>Submit</button>
-      </Link>
-    </form>
+      </form>
+    </div>
   );
 };
 // I need to add username and password to ApiUser array

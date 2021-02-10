@@ -16,23 +16,7 @@ const SignUpForm = (submitForm) => {
   };
   const [user, setuser] = useState(initialFormState);
 
-  const printSignUps = (e) => {
-    e.preventDefault();
-    // check user
-    console.log(user.firstname, user.lastname, user.username, user.password);
-  };
-
-  const updateSignUp = (e) => {
-    setuser({
-      ...user,
-      [e.target.name]: e.target.value
-    });
-  };
-  // const handleInputChange = (event) => {
-  //   const { username, value } = event.target;
-  //   setUser({ ...user, [username]: value });
-  // };
-  console.log(user);
+  console.log(values);
   return (
     <form className="center" onSubmit={handleSubmit}>
       <hr />
@@ -110,14 +94,18 @@ const SignUpForm = (submitForm) => {
       <br />
       <br />
       <hr />
-      {/* <Link to="/main"> */}
-      <button>Sign Up</button>
-      {/* </Link> */}
+      <Link to="/">
+        <button>Sign Up</button>
+      </Link>
       {/* on submit add entries into ApiInfo array then goto main page */}
       <br />
       <span>
         Already have an account? Login <a href="#">here</a>
       </span>
+      <br />
+      <br />
+      <br />
+      <br />
     </form>
   );
 };

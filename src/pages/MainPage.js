@@ -1,5 +1,4 @@
 import React from "react";
-// import { fallingCash } from "../images/fallingCash.jpg";
 import { Link } from "react-router-dom";
 import MyNavbar from "../components/shared/MyNavbar";
 import loggedInUser from "./LoginPage";
@@ -9,7 +8,7 @@ console.log("logged", loggedInUser.username);
 const MainPage = () => (
   <div className="pageContainer">
     <div
-      className="full-bg-size-img"
+      className="background_img"
       style={{
         backgroundImage: `url(https://t4.ftcdn.net/jpg/00/52/25/05/360_F_52250599_4kzEbc06mYCRbz8cMLSwKEzQQB98uauo.jpg)`
       }}

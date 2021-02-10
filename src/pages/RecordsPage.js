@@ -1,4 +1,4 @@
-import React, { useState, Fragment, useContext } from "react";
+import React, { Fragment, useContext } from "react";
 import MyNavbar from "../components/shared/MyNavbar";
 import { Link } from "react-router-dom";
 import { GlobalContext } from "../context/GlobalState";

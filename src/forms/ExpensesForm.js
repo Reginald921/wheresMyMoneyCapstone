@@ -14,7 +14,6 @@ export const ExpensesForm = () => {
 
   const onSubmit = (e) => {
     e.preventDefault();
-    // console.log(expenses.date, expenses.type, expenses.description, expenses.amount)
     const newExpense = {
       id: expenses.length + 1,
       // username: expenses.username,
@@ -27,7 +26,6 @@ export const ExpensesForm = () => {
     addExpense(newExpense);
     history.push("/records");
     console.log(newExpense);
-    // console.log(expenses)
   };
 
   return (
@@ -47,16 +45,6 @@ export const ExpensesForm = () => {
               />
             </label>
             <br />
-            {/* <label>
-              Type:
-              <input
-                // change to dropdown menu
-                type="text"
-                name="type"
-                value={type}
-                onChange={(e) => setType(e.target.value)}
-              />
-            </label> */}
             <label>
               Type:
               <select
