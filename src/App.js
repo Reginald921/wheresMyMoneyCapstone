@@ -1,5 +1,4 @@
-import React, { useState, useEffect } from "react";
-import MyNavbar from "../src/components/shared/MyNavbar";
+import React from "react";
 import "reactstrap/lib/";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./styles.css";
@@ -25,7 +24,6 @@ function App() {
     <>
       <GlobalProvider>
         <Router>
-          {/* <MyNavbar /> */}
           <Switch>
             <Route path="/login" exact component={LoginPage} />
             <Route path="/" exact component={MainPage} />

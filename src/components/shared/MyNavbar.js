@@ -1,15 +1,6 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import { NavLink as RRNavLink } from "react-router-dom";
-import {
-  Collapse,
-  Navbar,
-  NavbarToggler,
-  NavbarBrand,
-  Nav,
-  NavItem,
-  NavLink
-} from "reactstrap";
+import { Nav, NavItem, NavLink } from "reactstrap";
 
 const NavBar = () => {
   return (
